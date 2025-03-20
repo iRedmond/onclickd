@@ -1,12 +1,13 @@
 <script src="onclickd.js"></script>
 <script>
-    document.addEventListener("click", function(evt){
-        if(evt.target.id == "cancel") form.style.display = "none";
-    });
+	document.addEventListener("click", function(evt){
+		if(evt.target.id == "cancel") form.style.display = "none";
+	});
 </script>
 <div id="cancel" style="height: 100%; background-color: yellow;">
-    <button id="show" onclick="self.form.style.display = ''">SHOW</button>
-    <form id="form" style="display: none; background-color: aqua;">
-        <input value="type something here...">
-    </form>
+	<button id="show" onclick="self.form.style.display = ''">SHOW</button>
+	Click Yellow Area to CANCEL...
+	<form id="form" style="display: none; background-color: aqua;">
+		<input value="type something here...">
+	</form>
 </div>
